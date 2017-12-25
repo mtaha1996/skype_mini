@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<input id ="id_create" type="text" >
+<button onclick="create_chat()">creat chat</button>
+<p></p>
+<input id ="id_join" type="text">
+<button onclick="join_chat()">join chat</button>
+
+
+<script>
+  function create_chat() {
+    var name = document.getElementById("id_create").value;
+    window.location="/create/"+name;
+  }
+</script>
+
+<script>
+  function join_chat() {
+    var name = document.getElementById("id_join").value;
+    window.location="/join/"+name;
+ }
+</script>
+
+
+</body>
+</html>
